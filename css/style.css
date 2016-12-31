@@ -98,7 +98,6 @@ span.bold {
     section#footer span {
       margin: 5em auto 1em; }
       section#footer span a {
-        color: #000000;
         font-size: .8em; }
         section#footer span a i {
           -o-transition: all 0.2s ease;
@@ -115,27 +114,37 @@ span.bold {
           border-radius: 50%;
           border: 2px solid #888888;
           margin: 0 2px;
-          background-color: #FFFFFF; }
-        section#footer span a:hover {
+          background-color: #FFFFFF;
+          color: #000000; }
+          section#footer span a i.fa-facebook-official {
+            border: 2px solid #3b5998; }
+          section#footer span a i.fa-github {
+            border: 2px solid #bd2c00; }
+          section#footer span a i.fa-spotify {
+            border: 2px solid #2ebd59; }
+          section#footer span a i.fa-linkedin {
+            border: 2px solid #0077B5; }
+          section#footer span a i.fa-envelope-o {
+            border: 2px solid #fbbc05; }
+        section#footer span a:hover i {
+          -o-transition: all 0.2s ease;
+          -ms-transition: all 0.2s ease;
+          -moz-transition: all 0.2s ease;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+          background-color: #000000;
+          border: 2px solid #FFFFFF;
           color: #FFFFFF; }
-          section#footer span a:hover i {
-            -o-transition: all 0.2s ease;
-            -ms-transition: all 0.2s ease;
-            -moz-transition: all 0.2s ease;
-            -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
-            background-color: #000000;
-            border: 2px solid #FFFFFF; }
-            section#footer span a:hover i.fa-facebook-official {
-              background-color: #3b5998; }
-            section#footer span a:hover i.fa-github {
-              background-color: #bd2c00; }
-            section#footer span a:hover i.fa-spotify {
-              background-color: #2ebd59; }
-            section#footer span a:hover i.fa-linkedin {
-              background-color: #0077B5; }
-            section#footer span a:hover i.fa-envelope-o {
-              background-color: #fbbc05; }
+          section#footer span a:hover i.fa-facebook-official {
+            background-color: #3b5998; }
+          section#footer span a:hover i.fa-github {
+            background-color: #bd2c00; }
+          section#footer span a:hover i.fa-spotify {
+            background-color: #2ebd59; }
+          section#footer span a:hover i.fa-linkedin {
+            background-color: #0077B5; }
+          section#footer span a:hover i.fa-envelope-o {
+            background-color: #fbbc05; }
     section#footer p {
       font-size: 85%;
       margin: 1em auto; } }

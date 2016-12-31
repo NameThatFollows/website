@@ -147,18 +147,37 @@ span.bold {
                     border: 2px solid #888888;
                     margin: 0 2px;
                     background-color: #FFFFFF;
+                    color: #000000;
+
+                    &.fa-facebook-official {
+                        border: 2px solid #3b5998;
+                    }
+
+                    &.fa-github {
+                        border: 2px solid #bd2c00;
+                    }
+
+                    &.fa-spotify {
+                        border: 2px solid #2ebd59;
+                    }
+
+                    &.fa-linkedin {
+                        border: 2px solid #0077B5;
+                    }
+
+                    &.fa-envelope-o {
+                        border: 2px solid #fbbc05;
+                    }
                 }
 
-                color: #000000;
                 font-size: .8em;
 
-                &:hover {
-                    color: #FFFFFF;
-                    
+                &:hover {                
                     i {
                         @include fade(.2s);
                         background-color: #000000;
                         border: 2px solid #FFFFFF;
+                        color: #FFFFFF;
 
                         &.fa-facebook-official {
                             background-color: #3b5998;
