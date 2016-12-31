@@ -90,13 +90,16 @@ span.bold {
     line-height: 1.4em;
     width: 85%;
     font-size: 150%; }
+  section#main-content a {
+    color: #000000;
+    font-weight: 600; }
 
   section#footer {
     display: block;
     text-align: center;
     margin: 6em auto 0; }
     section#footer span {
-      margin: 5em auto 1em; }
+      margin: 4em auto 1em; }
       section#footer span a {
         font-size: .8em; }
         section#footer span a i {
@@ -146,8 +149,11 @@ span.bold {
           section#footer span a:hover i.fa-envelope-o {
             background-color: #fbbc05; }
     section#footer p {
+      font-size: 150%;
+      margin: 1em auto .5em; }
+    section#footer p.copy {
       font-size: 85%;
-      margin: 1em auto; } }
+      margin: 5em auto 1em; } }
 @media (min-width: 600px) {
   section#footer span a {
     font-size: 1em; }
@@ -160,7 +166,7 @@ span.bold {
   div.content {
     border: 2px solid #DDDDDD;
     max-width: 1024px;
-    margin: 60px auto 0;
+    margin: 4em auto;
     -webkit-box-shadow: 0 0 20px #F0F0F0;
     -moz-box-shadow: 0 0 10px #F0F0F0;
     box-shadow: 0 0 10px #F0F0F0; }
@@ -172,6 +178,6 @@ span.bold {
     width: 80%; }
 
   section#footer {
-    margin: 6em auto 4em; } }
+    margin: 6em auto 2em; } }
 
 /*# sourceMappingURL=style.css.map */
