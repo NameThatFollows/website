@@ -1,0 +1,221 @@
+$secondary-color: #DDDDDD; 
+
+html, body {
+    margin: 0;
+    font-size: 16px;
+    min-width: 300px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin underline($width) {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -4px;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: $width;
+    background: $secondary-color;
+}
+
+@mixin fade($time) {
+    -o-transition: all $time ease;
+    -ms-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -webkit-transition: all $time ease;
+    transition: all $time ease;
+}
+
+span.bold {
+    font-weight: 600;
+}
+
+@media (min-width: 0px) {
+    nav {
+        ul {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            background-color: #FFFFFF;
+            width: 320px;
+        }
+
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            box-sizing: inherit;
+            padding: 10px 15px;
+        }
+
+        a {
+            display: block;
+            position: relative;
+            
+            text-decoration: none;
+            color: #555555;
+
+            &.active {
+                color: #333333;
+                font-weight: 600;
+            }
+
+            &.active:after {
+                @include underline(100%);
+            }
+
+            &:after {
+                @include underline(0%);
+
+                -o-transition: .2s;
+                -ms-transition: .2s;
+                -moz-transition: .2s;
+                -webkit-transition: .2s;
+                transition: .2s;
+            }
+            
+            &:hover {
+                color: #000000;
+            }
+
+            &:hover:after {
+                width: 100%;
+            }
+        }
+
+        span {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            bottom: 1.9em;
+            border-bottom: 2px solid $secondary-color;
+            width: 85%;
+            height: 10px;
+            z-index: -1;
+        }
+
+        margin: 20px 0 0;
+    }
+
+    section#main-content {
+        header {
+            p {
+                text-align: center;
+                font-weight: 600;
+                margin: 2em 0 0;
+                font-size: 200%;
+                width: 100%;
+                line-height: .8em;
+            }
+
+            h1 {
+                display: block;
+                text-align: center;
+                font-weight: bold;
+                padding: 0 20px;
+                font-size: 550%;
+                line-height: .85em;
+                margin: .15em 0;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin: 1.5em auto;
+            line-height: 1.4em;
+            width: 85%;
+            font-size: 150%;
+        }
+    }
+
+    section#footer {
+        span {
+            margin: 5em auto 1em;
+
+            a {
+                i {
+                    display: inline-block;
+                    vertical-align: middle;
+                    text-align: center;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 2px #000000;
+                    margin: 0 2px;
+                    background-color: #FFFFFF;
+                }
+
+                color: #000000;
+                font-size: .8em;
+
+                &:hover {
+                    color: #FFFFFF;
+                    
+                    i {
+                        @include fade(.2s);
+                        background-color: #000000;
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 85%;
+            margin: 1em auto;
+        }
+
+        display: block;
+        text-align: center;
+        margin: 6em auto 0;
+    }
+}
+
+@media (min-width: 360px) {
+
+}
+
+@media (min-width: 600px) {
+    section#footer {
+        span {
+            a {
+                i {
+                    margin: 0 5px;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px
+                }
+
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    div.content {
+        border: 2px solid $secondary-color;
+        max-width: 1024px;
+        margin: 60px auto 0;
+
+        -webkit-box-shadow: 0 0 20px #F0F0F0;
+        -moz-box-shadow: 0 0 10px #F0F0F0;
+        box-shadow: 0 0 10px #F0F0F0;
+    }
+
+    nav {
+        margin: 50px 0 0;
+    }
+
+    section {
+        p {
+            width: 80%;
+        }
+    }
+
+    section#footer {
+        margin: 6em auto 4em;
+    }
+}
