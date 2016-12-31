@@ -136,6 +136,7 @@ span.bold {
 
             a {
                 i {
+                    @include fade(.2s);
                     display: inline-block;
                     vertical-align: middle;
                     text-align: center;
@@ -143,7 +144,7 @@ span.bold {
                     height: 50px;
                     line-height: 50px;
                     border-radius: 50%;
-                    box-shadow: 0px 0px 2px #000000;
+                    border: 2px solid #888888;
                     margin: 0 2px;
                     background-color: #FFFFFF;
                 }
@@ -157,6 +158,27 @@ span.bold {
                     i {
                         @include fade(.2s);
                         background-color: #000000;
+                        border: 2px solid #FFFFFF;
+
+                        &.fa-facebook-official {
+                            background-color: #3b5998;
+                        }
+
+                        &.fa-github {
+                            background-color: #bd2c00;
+                        }
+
+                        &.fa-spotify {
+                            background-color: #2ebd59;
+                        }
+
+                        &.fa-linkedin {
+                            background-color: #0077B5;
+                        }
+
+                        &.fa-envelope-o {
+                            background-color: #fbbc05;
+                        }
                     }
                 }
             }

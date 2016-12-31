@@ -101,6 +101,11 @@ span.bold {
         color: #000000;
         font-size: .8em; }
         section#footer span a i {
+          -o-transition: all 0.2s ease;
+          -ms-transition: all 0.2s ease;
+          -moz-transition: all 0.2s ease;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
           display: inline-block;
           vertical-align: middle;
           text-align: center;
@@ -108,7 +113,7 @@ span.bold {
           height: 50px;
           line-height: 50px;
           border-radius: 50%;
-          box-shadow: 0px 0px 2px #000000;
+          border: 2px solid #888888;
           margin: 0 2px;
           background-color: #FFFFFF; }
         section#footer span a:hover {
@@ -119,7 +124,18 @@ span.bold {
             -moz-transition: all 0.2s ease;
             -webkit-transition: all 0.2s ease;
             transition: all 0.2s ease;
-            background-color: #000000; }
+            background-color: #000000;
+            border: 2px solid #FFFFFF; }
+            section#footer span a:hover i.fa-facebook-official {
+              background-color: #3b5998; }
+            section#footer span a:hover i.fa-github {
+              background-color: #bd2c00; }
+            section#footer span a:hover i.fa-spotify {
+              background-color: #2ebd59; }
+            section#footer span a:hover i.fa-linkedin {
+              background-color: #0077B5; }
+            section#footer span a:hover i.fa-envelope-o {
+              background-color: #fbbc05; }
     section#footer p {
       font-size: 85%;
       margin: 1em auto; } }
