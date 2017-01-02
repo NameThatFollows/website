@@ -1,2 +1,2 @@
-# website
-My current website in code form!
+# Website
+My current website with its insides exposed.
