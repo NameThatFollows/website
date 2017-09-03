@@ -99,7 +99,7 @@ span.bold {
         margin: 20px 0 0;
     }
 
-    section#main-content {
+    section#title {
         header {
             p {
                 text-align: center;
@@ -118,6 +118,17 @@ span.bold {
                 font-size: 550%;
                 line-height: .85em;
                 margin: .15em 0;
+            }
+        }
+    }
+
+    section#main-content {
+        header {
+            h1 {
+                text-align: center;
+                font-weight: bold;
+                font-size: 300%;
+                margin: 1em 0 0;
             }
         }
 
@@ -221,6 +232,37 @@ span.bold {
         display: block;
         text-align: center;
         margin: 6em auto 0;
+    }
+
+    div#resume-item {
+        text-align: center;
+
+        ul {
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 20pt;
+            margin: 50px 0 -10px;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 15pt;
+            margin: 20px 0 0;
+        }
+
+        h4 {
+            font-weight: 500;
+            margin: 0px 0 10px;
+        }
+
+        p {
+            font-size: 12pt;
+            margin: 0 auto;
+        }
     }
 }
 
